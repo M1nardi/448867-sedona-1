@@ -1,0 +1,42 @@
+.lodge-search {
+  padding: 0;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 49px;
+  margin: 0;
+  @include text-size (21px, 26px);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $bg-white;
+}
+
+.lodge-search__annotation {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 19px;
+    font-weight: bold;
+  }
+
+.lodge-search__text {
+  padding: 0;
+  margin: 0;
+  @include text-size (14px, 24px);
+}
+
+.lodge-search__header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.lodge-search__button {
+  display: inline-block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: $bg-white;
+  background-color: $bg-blue;
+}

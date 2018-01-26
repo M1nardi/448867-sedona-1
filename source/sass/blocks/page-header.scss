@@ -1,0 +1,23 @@
+.page-header {
+	display: flex;
+  flex-direction: column;
+	width: 320px;
+	margin: 0 auto;
+	background-color: $bg-white;
+	.page-header__logo {
+		text-align: center;
+		height: 56px;
+		background-color: $bg-white;
+		z-index: 1;
+	}
+}
+
+.page-header__container {
+	background: url(/img/bg-back-mobile@1x.jpg) center center no-repeat;
+	background-size: cover;
+	text-align: center;
+	.page-header__greeting {
+		padding-top: 90px;
+    padding-bottom: 77px;
+	}
+}
