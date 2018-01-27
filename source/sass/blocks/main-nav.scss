@@ -24,9 +24,10 @@
   &:last-child{
     border-bottom: none;
   }
-  .main-nav__link {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $bg-white;
-  }
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bg-white;
 }

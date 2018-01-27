@@ -1,0 +1,48 @@
+.photo-gallery {
+  padding: 0;
+  margin: 0;
+  @include text-size(14px, 24px);
+  .photo-gallery__annotation {
+    padding: 0;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.photo-gallery__item {
+  padding: 20px;
+  margin: 0;
+  border-top: 1px solid #e5e5e5; 
+  &:last-child {
+  border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.photo-gallery__post {
+  padding: 0;
+  margin: 0;
+}
+
+.photo-gallery__info {
+  margin-bottom: 20px;
+}
+
+.photo-gallery__title {
+  padding: 0;
+  margin: 0;
+  @include text-size(14px, 24px);
+  text-transform: uppercase;
+}
+
+.photo-gallery__author {
+  font-style: normal;
+}
+
+.photo-gallery__likes {
+  padding-left: 37px;
+  font-weight: bold;
+}
