@@ -8,18 +8,16 @@
 @import "blocks/lodge-search.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
 @import "blocks/photo-gallery.scss";
 @import "blocks/video-gallery.scss";
 @import "blocks/review-form.scss";
 
 @font-face {
-  font-family: 'PT Sans', "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   src: url("/fonts/ptsans.woff2") format("woff2"),
-        url("/fonts/ptsans.woff") format("woff"),
-          url("/fonts/ptsansbold.woff2") format("woff2"),
-            url("/fonts/ptsansbold.woff") format("woff");
+    url("/fonts/ptsans.woff") format("woff"),
+    url("/fonts/ptsansbold.woff2") format("woff2"),
+    url("/fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -27,6 +25,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: $font;
+  
   @include text-size(18px, 26px);
   line-height: 26px;
   color: $bg-black;

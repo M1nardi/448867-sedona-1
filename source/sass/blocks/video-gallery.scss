@@ -4,6 +4,7 @@
   padding-bottom: 40px;
   margin: 0;
   text-align: center;
+
   .video-gallery__wrapper {
     padding: 0;
     padding-left: 40px;
@@ -16,6 +17,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
+
   @include text-size(18px, 26px);
   font-weight: bold;
   text-transform: uppercase;
@@ -25,6 +27,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 35px;
+  
   @include text-size(14px, 24px);
   text-transform: uppercase;
 }

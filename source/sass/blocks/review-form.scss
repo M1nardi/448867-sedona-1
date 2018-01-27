@@ -2,6 +2,7 @@
   padding: 0;
   padding-bottom: 40px;
   margin: 0;
+
   @include text-size (18px, 26px);
 }
 
@@ -9,6 +10,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+
   @include text-size (14px, 24px);
   text-align: center;
   text-transform: uppercase;
@@ -22,6 +24,7 @@
 .review-form__title {
   padding: 0;
   margin: 0;
+  
   @include text-size (18px, 26px);
   font-weight: bold;
   text-align: center;

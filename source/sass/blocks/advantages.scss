@@ -18,7 +18,9 @@
   padding: 0;
   margin: 0;
   margin-bottom: 28px;
+
   @include text-size(14px, 21px);
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -28,6 +30,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
+  
   @include text-size(18px, 26px);
 }
 
