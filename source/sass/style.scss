@@ -1,5 +1,7 @@
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "blocks/global.scss";
+@import "blocks/fonts.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
@@ -11,39 +13,3 @@
 @import "blocks/photo-gallery.scss";
 @import "blocks/video-gallery.scss";
 @import "blocks/review-form.scss";
-
-@font-face {
-  font-family: "PT Sans", "Arial", sans-serif;
-  src: url("/fonts/ptsans.woff2") format("woff2"),
-    url("/fonts/ptsans.woff") format("woff"),
-    url("/fonts/ptsansbold.woff2") format("woff2"),
-    url("/fonts/ptsansbold.woff") format("woff");
-}
-
-body {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  font-family: $font;
-
-  @include text-size(18px, 26px);
-  line-height: 26px;
-  color: $bg-black;
-  background-color: $bg-white;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}

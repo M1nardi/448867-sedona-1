@@ -31,37 +31,27 @@
   text-transform: uppercase;
 }
 
-.name label {
+.review-form__input-label {
   @include text-size (14px, 26px);
   text-transform: uppercase;
 }
 
-.name input {
+.review-form__input {
   @include text-size(18px, 26px);
   font-weight: bold;
 }
 
-.contacts label {
-  @include text-size (14px, 26px);
-  text-transform: uppercase;
-}
-
-.contacts input {
+.review-form__radio-label {
   @include text-size(18px, 26px);
   font-weight: bold;
 }
 
-.impression label {
+.review-form__checkbox-label {
   @include text-size(18px, 26px);
   font-weight: bold;
 }
 
-.places label {
-  @include text-size(18px, 26px);
-  font-weight: bold;
-}
-
-.comment-field textarea {
+.review-form__comment {
   @include text-size(18px, 26px);
   font-weight: bold;
 }
