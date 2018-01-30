@@ -1,0 +1,35 @@
+.main-nav {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  background-color: $bg-blue;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+  text-align: center;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bg-white;
+}

@@ -1,0 +1,57 @@
+.review-form {
+  padding: 0;
+  padding-bottom: 40px;
+  margin: 0;
+
+  @include text-size (18px, 26px);
+}
+
+.review-form__annotation {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include text-size (14px, 24px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review-form__item {
+  padding: 0;
+  margin: 0;
+}
+
+.review-form__title {
+  padding: 0;
+  margin: 0;
+
+  @include text-size (18px, 26px);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review-form__input-label {
+  @include text-size (14px, 26px);
+  text-transform: uppercase;
+}
+
+.review-form__input {
+  @include text-size(18px, 26px);
+  font-weight: bold;
+}
+
+.review-form__radio-label {
+  @include text-size(18px, 26px);
+  font-weight: bold;
+}
+
+.review-form__checkbox-label {
+  @include text-size(18px, 26px);
+  font-weight: bold;
+}
+
+.review-form__comment {
+  @include text-size(18px, 26px);
+  font-weight: bold;
+}
