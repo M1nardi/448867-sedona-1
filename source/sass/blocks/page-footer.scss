@@ -1,5 +1,5 @@
 .page-footer {
-  width: 320px;
+  min-width: 320px;
   padding-top: 36px;
   margin: 0 auto;
   text-align: center;
@@ -13,4 +13,17 @@
   @include text-size (21px, 26px);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 120px;
+    padding: 0;
+  }
+  
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
