@@ -1,4 +1,6 @@
 .review-form {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   padding-bottom: 40px;
   margin: 0;
@@ -17,8 +19,11 @@
 }
 
 .review-form__item {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 .review-form__title {
@@ -31,19 +36,37 @@
   text-transform: uppercase;
 }
 
+.review-form__input-container {
+  display: flex;
+}
+
 .review-form__input-label {
   @include text-size (14px, 26px);
   text-transform: uppercase;
 }
 
 .review-form__input {
+  flex-grow: 1;
+
   @include text-size(18px, 26px);
   font-weight: bold;
+}
+
+.review-form__radio-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .review-form__radio-label {
   @include text-size(18px, 26px);
   font-weight: bold;
+}
+
+.review-form__checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .review-form__checkbox-label {
@@ -54,4 +77,89 @@
 .review-form__comment {
   @include text-size(18px, 26px);
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .review-form__item:nth-child(1) {
+    width: 50%;
+    order: 2;
+  }
+
+  .review-form__item:nth-child(2) {
+    width: 100%;
+    order: 3;
+  }
+
+  .review-form__item:nth-child(3) {
+    width: 50%;
+    order: 1;
+  }
+
+  .review-form__item:nth-child(4) {
+    width: 100%;
+    order: 4;
+  }
+
+  .review-form__item:nth-child(5) {
+    width: 100%;
+    order: 5;
+  }
+
+  .review-form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-form__contacts {
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .review-form__button {
+    margin-right: auto;
+    width: 324px;
+    order: 6;
+  }
+
+  .review-form__checkbox-list {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .review-form__checkbox-option {
+    width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review-form__contacts {
+    flex-direction: row;
+  } 
+
+  .review-form__checkbox-list {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .review-form__comment {
+    width: 100%;
+  }
+
+  
 }
