@@ -19,6 +19,13 @@
 @media (min-width: $tablet-width) {
   .page-main {
     width: auto;
-    padding-top: 50px;
+    padding-top: 56px;
+  
+    .page-main__title {
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      @include text-size(30px, 26px);
+    }  
   }
 }

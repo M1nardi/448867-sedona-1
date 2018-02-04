@@ -37,7 +37,41 @@
   padding-top: 16px;
   padding-bottom: 16px;
   vertical-align: middle;
+  font-weight: bold;
   text-decoration: none;
   color: $bg-white;
   background-color: $bg-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .lodge-search {
+    padding-top: 57px;
+    margin-bottom: 9px;
+  }
+
+  .lodge-search__annotation {
+    margin-bottom: 30px;
+
+  @include text-size(30px, 26px);
+  }
+
+  .lodge-search__text {
+    margin-bottom: 41px;
+  }
+
+  .lodge-search__button {
+    width: 459px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .lodge-search {
+    margin-bottom: 17px;
+  }
+
+  .lodge-search__text {
+    padding-left: 350px;
+    padding-right: 350px;
+    margin-bottom: 46px;
+  }
 }

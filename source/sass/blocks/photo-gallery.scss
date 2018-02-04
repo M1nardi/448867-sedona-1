@@ -57,6 +57,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-gallery__header {
+    padding-left: 138px;
+    padding-right: 138px;
+    margin-bottom: 68px;
+  }
+
   .photo-gallery__wrapper {
     margin: 0 60px;
     display: flex;
@@ -101,6 +107,6 @@
 
 @media (min-width: $desktop-width) {
   .photo-gallery__item {
-    width: 33%;
+    width: 33.3333%;
   }
 }
