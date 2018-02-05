@@ -30,15 +30,15 @@
   .page-main {
     width: auto;
     padding-top: 56px;
-  
+
     .page-main__title {
       margin-top: 20px;
       margin-bottom: 30px;
 
       @include text-size(30px, 26px);
-    }    
+    }
   }
-  
+
   .page-main__annotation {
     margin-bottom: 74px;
   }
