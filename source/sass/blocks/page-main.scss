@@ -16,6 +16,16 @@
   }
 }
 
+.page-main__annotation {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include text-size (14px, 24px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
     width: auto;
@@ -26,6 +36,10 @@
       margin-bottom: 30px;
 
       @include text-size(30px, 26px);
-    }  
+    }    
+  }
+  
+  .page-main__annotation {
+    margin-bottom: 74px;
   }
 }

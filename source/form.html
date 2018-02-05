@@ -36,39 +36,39 @@
         </div>
       </header>
       <main class="page-main">
-        <h1 class="page-main__title">Оставьте свой отзыв</h1>
-        <form class="review-form">
-          <div class="review-form__header">  
+        <div class="page-main__header">
+          <h1 class="page-main__title">Оставьте свой отзыв</h1> 
           <h2 class="visually-hidden">Форма отзыва</h2>
-          <p class="review-form__annotation">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="page-main__annotation">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
+        <form class="review-form">
           <fieldset class="review-form__item">
-            <legend class="review-form__title">Представьтесь:</legend>
-            <div class="review-form__input-container">
-              <label class="review-form__input-label" for="first-name">Имя:<sup>*</sup></label>
+            <legend class="review-form__title review-form__title--right">Представьтесь:</legend>
+            <div class="review-form__input-container review-form__input-container--small">
+              <label class="review-form__input-label" for="first-name">Имя<sup>*</sup>:</label>
               <input class="review-form__input" type="text" id="first-name" name="first-name" value="Петр" required>
             </div>
-            <div class="review-form__input-container">
-              <label class="review-form__input-label" for="second-name">Фамилия:<sup>*</sup></label>
+            <div class="review-form__input-container review-form__input-container--small">
+              <label class="review-form__input-label" for="second-name">Фамилия<sup>*</sup>:</label>
               <input class="review-form__input" type="text" id="second-name" name="second-name" value="Иванов" required>
             </div>
-            <div class="review-form__input-container">
+            <div class="review-form__input-container review-form__input-container--small">
               <label class="review-form__input-label" for="father-name">Отчество:</label>
               <input class="review-form__input" type="text" id="father-name" name="father-name" value="Александрович">
             </div>
           </fieldset>
           <fieldset class="review-form__item">
-            <legend class="review-form__title">Контактная информация:</legend>
+            <legend class="review-form__title review-form__title--center">Контактная информация:</legend>
             <div class="review-form__container">
               <div class="review-form__contacts">
-                <label class="review-form__input-label" for="tel">Контактный телефон:<sup>*</sup></label>
+                <label class="review-form__input-label review-form__input-label--left" for="tel">Контактный телефон:<sup>*</sup></label>
                 <div class="review-form__input-wrapper">
                   <input class="review-form__input" type="tel" id="tel" name="tel" value="Введите телефон" required>
                   <img src="http://placehold.it/18x18" width="18" height="18" alt="Телефон">
                 </div>
               </div>
               <div class="review-form__contacts">
-                <label class="review-form__input-label" for="email">Электронная почта:<sup>*</sup></label>
+                <label class="review-form__input-label review-form__input-label--left" for="email">Электронная почта:<sup>*</sup></label>
                 <div class="review-form__input-wrapper">
                   <input class="review-form__input" type="email" id="email" name="email" value="Введите e-mail" required>
                   <img src="http://placehold.it/18x18" width="18" height="18" alt="Эл. почта">
@@ -94,7 +94,7 @@
             </ul>
           </fieldset>
           <fieldset class="review-form__item">
-            <legend class="review-form__title">Посещенные достопримечательности:</legend>
+            <legend class="review-form__title review-form__title--center">Посещенные достопримечательности:</legend>
             <ul class="review-form__checkbox-list">
               <li class="review-form__checkbox-option">
                 <input class="review-form__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
@@ -115,7 +115,7 @@
             </ul>
           </fieldset>
           <fieldset class="review-form__item comment-field">
-            <legend class="review-form__title">Опишите свои эмоции:</legend>
+            <legend class="review-form__title review-form__title--center">Опишите свои эмоции:</legend>
             <textarea class="review-form__comment" name="comment" id="comment-field" rows="6">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="review-form__button" type="submit">Отправить отзыв</button>
