@@ -43,3 +43,20 @@
     margin-bottom: 74px;
   }
 }
+
+@media (min-width: $desktop-width) {
+    .page-main { 
+      .page-main__title {
+        margin-top: 57px;
+    }
+  }
+
+  .page-main__header {
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  .page-main__annotation {
+    margin-bottom: 59px;
+  }
+}

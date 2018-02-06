@@ -62,3 +62,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__greeting--small {
+    height: 80px;
+    padding-top: 102px;
+    padding-bottom: 111px;
+  }
+}

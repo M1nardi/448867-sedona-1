@@ -240,21 +240,74 @@
 }
 
 @media (min-width: $desktop-width) {
+  .review-form {
+    margin: 0 119px;
+  }
+
+  .review-form__item {
+    margin-bottom: 33px;
+  }
+
+  .review-form__title {
+    padding-left: 81px;
+
+    &--right {
+      padding-left: 80px;
+    }
+
+    &--center {
+      padding: 0;
+      margin-bottom: 74px;
+    }
+  }
+
+  .review-form__radio-list {
+    padding-left: 5px;
+  }
+
+  .review-form__input-label {
+    margin-right: 16px;
+    padding-left: 81px;
+
+    &--left {
+      padding-left: 0;
+    }
+  }
+
   .review-form__container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
   .review-form__contacts {
     flex-direction: row;
+    align-items: baseline;
+  }
+
+  .review-form__input-wrapper {
+    flex-grow: 1;
+  }
+
+  .review-form__title--small {
+    margin-bottom: 20px;
   }
 
   .review-form__checkbox-list {
-    margin: 0 auto;
-    width: 70%;
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+
+  .review-form__checkbox-option {
+    margin: 0;
   }
 
   .review-form__comment {
     width: 100%;
+  }
+
+  .review-form__button {
+    width: 50%;
   }
 }
