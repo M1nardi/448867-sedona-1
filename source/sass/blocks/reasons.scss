@@ -114,8 +114,8 @@
       width: 33.3333%;
       padding: 0;
     }
+    
     .reasons__title {
-
       @include text-size(21px, 26px);
     }
   }
@@ -204,11 +204,11 @@
   }
 
   .reasons__item-container {
-
     .reasons__title {
       padding-left: 121px;
       padding-right: 121px;
     }
+
     .reasons__number {
       margin-bottom: 21px;
     }
@@ -218,5 +218,4 @@
       padding-right: 58px;
     }
   }
-
 }
