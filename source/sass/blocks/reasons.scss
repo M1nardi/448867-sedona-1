@@ -110,12 +110,10 @@
   }
 
   .reasons__item {
-
     .reasons__container {
       width: 33.3333%;
       padding: 0;
     }
-
     .reasons__title {
 
       @include text-size(21px, 26px);
@@ -123,7 +121,6 @@
   }
 
   .reasons__container {
-
     .reasons__title {
       padding-left: 47px;
       padding-right: 47px;
@@ -194,7 +191,6 @@
   }
 
   .reasons__container {
-
     .reasons__title {
       padding-left: 92px;
       padding-right: 92px;
@@ -213,7 +209,6 @@
       padding-left: 121px;
       padding-right: 121px;
     }
-
     .reasons__number {
       margin-bottom: 21px;
     }

@@ -107,11 +107,13 @@
 
   .review-form__item:nth-child(4) {
     width: 100%;
+    margin-bottom: 22px;
     order: 4;
   }
 
   .review-form__item:nth-child(5) {
     width: 100%;
+    margin-bottom: 58px;
     order: 5;
   }
 
@@ -185,12 +187,6 @@
     top: 0;
   }
 
-  .review-form__button {
-    margin-right: auto;
-    width: 324px;
-    order: 6;
-  }
-
   .review-form__checkbox-list {
     margin: 0 auto;
     margin-top: 36px;
@@ -209,10 +205,6 @@
     margin-right: 0;
   }
 
-  .review-form__item:nth-child(4) {
-    margin-bottom: 22px;
-  }
-
   .review-form__comment {
     box-sizing: border-box;
     height: 160px;
@@ -224,12 +216,11 @@
     background-color: $bg-grey;
   }
 
-  .review-form__item:nth-child(5) {
-    margin-bottom: 58px;
-  }
-
   .review-form__button {
+    order: 6;
+    width: 324px;
     padding: 18px 71px;
+    margin-right: auto;
     border: none;
     font-size: 18px;
     text-transform: uppercase;
