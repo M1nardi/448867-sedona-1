@@ -1,6 +1,8 @@
 .main-nav {
-  font-size: 18px;
-  line-height: 40px;
+  width: 320px;
+  margin: 0 auto;
+
+  @include text-size(18px, 40px);
   font-weight: bold;
   background-color: $bg-blue;
 }
@@ -9,11 +11,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.main-nav__wrapper {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .main-nav__item {
@@ -32,4 +29,39 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $bg-white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+
+    @include text-size(14px, 26px);
+    background-color: $bg-white;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .main-nav__item {
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+  }
+
+  .main-nav__link {
+    color: $bg-black;
+  }
 }

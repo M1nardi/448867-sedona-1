@@ -1,0 +1,8 @@
+@media (min-width: $tablet-width) {
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+}

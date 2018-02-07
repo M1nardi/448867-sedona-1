@@ -15,3 +15,48 @@
     text-transform: uppercase;
   }
 }
+
+.page-main__annotation {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include text-size (14px, 24px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: auto;
+    padding-top: 56px;
+
+    .page-main__title {
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      @include text-size(30px, 26px);
+    }
+  }
+
+  .page-main__annotation {
+    margin-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    .page-main__title {
+      margin-top: 57px;
+    }
+  }
+
+  .page-main__header {
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  .page-main__annotation {
+    margin-bottom: 59px;
+  }
+}

@@ -1,4 +1,6 @@
 .review-form {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   padding-bottom: 40px;
   margin: 0;
@@ -6,19 +8,12 @@
   @include text-size (18px, 26px);
 }
 
-.review-form__annotation {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-
-  @include text-size (14px, 24px);
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .review-form__item {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 .review-form__title {
@@ -31,19 +26,37 @@
   text-transform: uppercase;
 }
 
+.review-form__input-container {
+  display: flex;
+}
+
 .review-form__input-label {
   @include text-size (14px, 26px);
   text-transform: uppercase;
 }
 
 .review-form__input {
+  flex-grow: 1;
+
   @include text-size(18px, 26px);
   font-weight: bold;
+}
+
+.review-form__radio-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .review-form__radio-label {
   @include text-size(18px, 26px);
   font-weight: bold;
+}
+
+.review-form__checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .review-form__checkbox-label {
@@ -54,4 +67,235 @@
 .review-form__comment {
   @include text-size(18px, 26px);
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    margin: 0 60px;
+    margin-bottom: 22px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .review-form__item {
+    box-sizing: border-box;
+    margin-bottom: 34px;
+  }
+
+  .review-form__item:nth-child(1) {
+    width: 50%;
+    order: 2;
+  }
+
+  .review-form__item:nth-child(2) {
+    width: 100%;
+    order: 3;
+  }
+
+  .review-form__item:nth-child(3) {
+    width: 50%;
+    order: 1;
+  }
+
+  .review-form__item:nth-child(4) {
+    width: 100%;
+    margin-bottom: 22px;
+    order: 4;
+  }
+
+  .review-form__item:nth-child(5) {
+    width: 100%;
+    margin-bottom: 58px;
+    order: 5;
+  }
+
+  .review-form__title {
+    margin-bottom: 73px;
+    text-align: left;
+
+    @include text-size(21px, 26px);
+
+    &--right {
+      padding-left: 57px;
+      margin-bottom: 57px;
+    }
+
+    &--center {
+      width: 412px;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  .review-form__input-container {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 23px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .review-form__input-label {
+    margin-right: 16px;
+    padding-left: 58px;
+  }
+
+  .review-form__input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 0;
+    padding-left: 19px;
+    border: none;
+    background-color: $bg-grey;
+  }
+
+  .review-form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-form__radio-option {
+    padding-left: 54px;
+    margin-bottom: 52px;
+  }
+
+  .review-form__contacts {
+    width: 100%;
+    margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-form__input-label--left {
+    padding-left: 21px;
+    margin-bottom: 7px;
+  }
+
+  .review-form__input-wrapper {
+    position: relative;
+  }
+
+  .review-form__input-wrapper img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .review-form__checkbox-list {
+    margin: 0 auto;
+    margin-top: 36px;
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review-form__checkbox-option {
+    padding-left: 58px;
+    margin-right: 70px;
+    margin-bottom: 62px;
+  }
+
+  .review-form__checkbox-option:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .review-form__comment {
+    box-sizing: border-box;
+    height: 160px;
+    width: 100%;
+    margin-top: 36px;
+    border: none;
+    padding-left: 19px;
+    padding-top: 16px;
+    background-color: $bg-grey;
+  }
+
+  .review-form__button {
+    order: 6;
+    width: 324px;
+    padding: 18px 71px;
+    margin-right: auto;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: $bg-blue;
+    font-weight: bold;
+    color: $bg-white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form {
+    margin: 0 119px;
+  }
+
+  .review-form__item {
+    margin-bottom: 33px;
+  }
+
+  .review-form__title {
+    padding-left: 81px;
+
+    &--right {
+      padding-left: 80px;
+    }
+
+    &--center {
+      padding: 0;
+      margin-bottom: 74px;
+    }
+  }
+
+  .review-form__radio-list {
+    padding-left: 5px;
+  }
+
+  .review-form__input-label {
+    margin-right: 16px;
+    padding-left: 81px;
+
+    &--left {
+      padding-left: 0;
+    }
+  }
+
+  .review-form__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .review-form__contacts {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .review-form__input-wrapper {
+    flex-grow: 1;
+  }
+
+  .review-form__title--small {
+    margin-bottom: 20px;
+  }
+
+  .review-form__checkbox-list {
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+
+  .review-form__checkbox-option {
+    margin: 0;
+  }
+
+  .review-form__comment {
+    width: 100%;
+  }
+
+  .review-form__button {
+    width: 50%;
+  }
 }
