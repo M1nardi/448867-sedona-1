@@ -1,6 +1,6 @@
 .page-main {
-  width: 320px;
-  padding: 0;
+  width: auto;
+  padding: 0 20px;
   padding-top: 40px;
   margin: 0 auto;
   background-color: $bg-white;
@@ -19,7 +19,7 @@
 .page-main__annotation {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @include text-size (14px, 24px);
   text-align: center;
