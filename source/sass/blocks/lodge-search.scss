@@ -41,6 +41,15 @@
   text-decoration: none;
   color: $bg-white;
   background-color: $bg-blue;
+
+  &:hover {
+    background-color: $bg-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bg-blue-active;
+  }
 }
 
 @media (min-width: $tablet-width) {

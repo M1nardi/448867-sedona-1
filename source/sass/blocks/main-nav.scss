@@ -14,10 +14,6 @@
 
 .main-nav__item {
   position: relative;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
   text-align: center;
 
   &:last-child {
@@ -26,9 +22,23 @@
 }
 
 .main-nav__link {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
   text-transform: uppercase;
   text-decoration: none;
   color: $bg-white;
+
+  &:hover {
+    background-color: $bg-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bg-blue-active;
+  }
 }
 
 .main-nav__toggle {
@@ -68,6 +78,32 @@
   }
 
   .main-nav__link {
+    display: inline;
+    border: none;
     color: $bg-black;
+
+    &:hover {
+      background-color: transparent;
+      color: $bg-blue;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $bg-grey;
+    }
+  }
+
+  .main-nav__link--active {
+    color: $bg-brown;
+
+    &:hover {
+      color: $bg-brown-hover;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $bg-brown-active;
+      background-color: transparent;
+    }
   }
 }
