@@ -35,10 +35,10 @@
           <img class="page-header__greeting page-header__greeting--small" src="img/text-sedona.svg" width="230" height="39" alt="Добро пожаловать в Седону!">
         </div>
       </header>
-      <main class="page-main">
-        <div class="page-main__header">
-          <h1 class="page-main__title">Оставьте свой отзыв</h1>
-          <h2 class="visually-hidden">Форма отзыва</h2>
+      <main class="page-main page-main--narrow">
+        <div class="page-main__header page-main__header--wide">
+          <h1 class="visually-hidden">Форма отзыва</h1>
+          <h2 class="page-main__title">Оставьте свой отзыв</h2>
           <p class="page-main__annotation">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review-form">
@@ -80,16 +80,16 @@
             <h3 class="review-form__title">Ваше общее впечатление:</h3>
             <ul class="review-form__radio-list">
               <li class="review-form__radio-option">
-                <input class="review-form__radio" type="radio" id="positive" name="impression" value="positive" checked>
+                <input class="review-form__radio visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
                 <label class="review-form__radio-label" for="positive">Скорее положительное</label>
               </li>
               <li class="review-form__radio-option">
-                <input class="review-form__radio" type="radio" id="negative" name="impression" value="negative">
+                <input class="review-form__radio visually-hidden" type="radio" id="negative" name="impression" value="negative">
                 <label class="review-form__radio-label" for="negative">Скорее отрицательное</label>
               </li>
               <li class="review-form__radio-option">
-                <input class="review-form__radio" type="radio" id="no-decision" name="impression" value="no-decision">
-                <label class="review-form__radio-label" for="positive">Затрудняюсь ответить</label>
+                <input class="review-form__radio visually-hidden" type="radio" id="no-decision" name="impression" value="no-decision">
+                <label class="review-form__radio-label" for="no-decision">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -97,19 +97,19 @@
             <h3 class="review-form__title review-form__title--center review-form__title--small">Посещенные достопримечательности:</h3>
             <ul class="review-form__checkbox-list">
               <li class="review-form__checkbox-option">
-                <input class="review-form__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-                <label class="review-form__checkbox-label" for="devil-bridge">Мост дьявола</label>
+                <input class="review-form__checkbox visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <label class="review-form__checkbox-label" for="devil-bridge">Мост Дьявола</label>
               </li>
               <li class="review-form__checkbox-option">
-                <input class="review-form__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+                <input class="review-form__checkbox visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
                 <label class="review-form__checkbox-label" for="slide-park">Слайд-парк</label>
               </li>
               <li class="review-form__checkbox-option">
-                <input class="review-form__checkbox" type="checkbox" name="bell-mountain" id="bell-mountain">
+                <input class="review-form__checkbox visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain">
                 <label class="review-form__checkbox-label" for="bell-mountain">Гора-Колокол</label>
               </li>
               <li class="review-form__checkbox-option">
-                <input class="review-form__checkbox" type="checkbox" name="red-rocks" id="red-rocks" checked>
+                <input class="review-form__checkbox visually-hidden" type="checkbox" name="red-rocks" id="red-rocks" checked>
                 <label class="review-form__checkbox-label" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
