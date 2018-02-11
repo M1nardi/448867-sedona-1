@@ -38,7 +38,7 @@
 
 .photo-gallery__container {
   margin-top: 17px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .photo-gallery__preview {
@@ -46,7 +46,7 @@
 }
 
 .photo-gallery__info {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .photo-gallery__title {
@@ -62,8 +62,16 @@
 }
 
 .photo-gallery__likes {
-  padding-left: 37px;
+  display: flex;
   font-weight: bold;
+}
+
+.photo-gallery__likes-image {
+  margin-right: 15px;
+
+  path {
+  fill: #b2b2b2;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -121,6 +129,10 @@
     margin: 0;
     background-color: $bg-grey;
   }
+
+  .photo-gallery__likes-image path {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -148,5 +160,9 @@
     box-sizing: border-box;
     color: $bg-white;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-gallery__likes-image path {
+    fill: #ffffff;
   }
 }
