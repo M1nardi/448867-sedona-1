@@ -17,7 +17,7 @@
   border: none;
 
   &::before {
-    content:"";
+    content: "";
     height: 1px;
     background-color: $bg-grey;
   }
@@ -35,7 +35,7 @@
   text-transform: uppercase;
 
   &--center {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 }
 
@@ -44,6 +44,7 @@
   align-items: center;
   box-sizing: border-box;
   margin-bottom: 20px;
+
   &:last-child {
     margin-bottom: 25px;
   }
@@ -83,6 +84,7 @@
 .review-form__input-wrapper {
   position: relative;
   display: flex;
+  margin-top: 6px;
 }
 
 .review-form__input-wrapper img {
@@ -91,20 +93,12 @@
   top: 0;
 }
 
-.review-form__title--center {
-  margin-bottom: 16px;
-}
-
 .review-form__contacts {
   margin-bottom: 9px;
 
   .review-form__input-label {
     padding-left: 23px;
   }
-}
-
-.review-form__input-wrapper {
-  margin-top: 6px;
 }
 
 .review-form__container {
@@ -124,7 +118,7 @@
   position: relative;
 
   &::before {
-    content:"";
+    content: "";
     position: absolute;
     left: -79px;
     top: -18px;
@@ -145,7 +139,7 @@
 }
 
 input[type="radio"]:checked ~ .review-form__radio-label::after {
-  content:"";
+  content: "";
   position: absolute;
   left: -63px;
   top: -2px;
@@ -178,7 +172,7 @@ input[type="radio"]:checked ~ .review-form__radio-label::after {
   position: relative;
 
   &::before {
-    content:"";
+    content: "";
     position: absolute;
     left: -79px;
     top: -18px;
