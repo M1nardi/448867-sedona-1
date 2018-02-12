@@ -28,7 +28,7 @@
 .lodge-search__header {
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .lodge-search__button {
@@ -41,6 +41,19 @@
   text-decoration: none;
   color: $bg-white;
   background-color: $bg-blue;
+
+  &:hover {
+    background-color: $bg-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bg-blue-active;
+  }
+
+  &:disabled {
+    background-color: $bg-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -70,8 +83,7 @@
   }
 
   .lodge-search__text {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding: 0 381px;
     margin-bottom: 46px;
   }
 }

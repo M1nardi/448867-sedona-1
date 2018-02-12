@@ -1,5 +1,5 @@
 .page-main {
-  width: 320px;
+  width: auto;
   padding: 0;
   padding-top: 40px;
   margin: 0 auto;
@@ -8,18 +8,66 @@
   .page-main__title {
     padding: 0;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
 
     @include text-size(18px,26px);
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
   }
 }
 
+.page-main__promo {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
+
+  @include text-size(18px,26px);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-main__header {
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 42px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--small {
+    margin-bottom: 25px;
+  }
+}
+
+.page-main__header--wide {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 17px;
+
+  .page-main__title {
+    margin-bottom: 24px;
+  }
+}
+
+.page-main--narrow {
+  padding: 0 20px;
+  padding-top: 40px;
+}
+
+.page-main__intro {
+  padding: 0;
+  margin: 0;
+
+  @include text-size(14px, 26px);
+}
+
 .page-main__annotation {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @include text-size (14px, 24px);
   text-align: center;
@@ -29,34 +77,55 @@
 @media (min-width: $tablet-width) {
   .page-main {
     width: auto;
-    padding-top: 56px;
+    padding: 0;
+    padding-top: 50px;
 
     .page-main__title {
-      margin-top: 20px;
+      margin-top: 26px;
       margin-bottom: 30px;
 
       @include text-size(30px, 26px);
     }
   }
 
+  .page-main__header {
+    margin-bottom: 49px;
+  }
+
+  .page-main__promo {
+    padding: 0 47px;
+    margin-bottom: 28px;
+
+    @include text-size (21px, 26px);
+  }
+
   .page-main__annotation {
-    margin-bottom: 74px;
+    padding: 0 139px;
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
     .page-main__title {
-      margin-top: 57px;
+      margin-top: 63px;
     }
   }
 
   .page-main__header {
-    width: 440px;
+    width: 490px;
     margin: 0 auto;
   }
 
+  .page-main__promo {
+    padding: 0;
+  }
+
+  .page-main__intro {
+    margin-bottom: 49px;
+  }
+
   .page-main__annotation {
-    margin-bottom: 59px;
+    padding: 0 22px;
   }
 }

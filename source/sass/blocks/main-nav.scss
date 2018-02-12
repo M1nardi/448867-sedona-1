@@ -1,6 +1,5 @@
 .main-nav {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
 
   @include text-size(18px, 40px);
   font-weight: bold;
@@ -14,10 +13,7 @@
 }
 
 .main-nav__item {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
+  position: relative;
   text-align: center;
 
   &:last-child {
@@ -26,9 +22,29 @@
 }
 
 .main-nav__link {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
   text-transform: uppercase;
   text-decoration: none;
   color: $bg-white;
+
+  &:hover {
+    background-color: $bg-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bg-blue-active;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,6 +78,32 @@
   }
 
   .main-nav__link {
+    display: inline;
+    border: none;
     color: $bg-black;
+
+    &:hover {
+      background-color: transparent;
+      color: $bg-blue;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $bg-grey;
+    }
+  }
+
+  .main-nav__link--active {
+    color: $bg-brown;
+
+    &:hover {
+      color: $bg-brown-hover;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $bg-brown-active;
+      background-color: transparent;
+    }
   }
 }
