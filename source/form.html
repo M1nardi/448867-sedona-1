@@ -29,9 +29,13 @@
           </div>
         </nav>
         <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Каньон Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Барбершоп «Бородинский»">
+          </picture>
         </a>
-        <div class="page-header__container">
+        <div class="page-header__container page-header__container--small">
           <img class="page-header__greeting page-header__greeting--small" src="img/text-sedona.svg" width="230" height="39" alt="Добро пожаловать в Седону!">
         </div>
       </header>
