@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 38px;
+  padding-top: 35px;
   padding-right: 42px;
   padding-left: 70px;
   padding-bottom: 37px;
@@ -27,12 +27,62 @@
 }
 
 .advantages__title {
+  position: relative;
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
 
   @include text-size(18px, 26px);
 }
+
+.advantages__item--lodging {
+  .advantages__title {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 39px;
+      height: 37px;
+      top: -9px;
+      left: -48px;
+      background-image: url("../img/icon-house.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.advantages__item--souvenirs {
+  .advantages__title {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 38px;
+      top: -10px;
+      left: -44px;
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.advantages__item--food {
+  .advantages__title {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 35px;
+      top: -4px;
+      left: -51px;
+      background-image: url("../img/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
 
 .advantages__text {
   padding: 0;
@@ -73,11 +123,68 @@
 
     @include text-size (21px, 26px);
   }
+
+  .advantages__item--lodging {
+    .advantages__title {
+      &::before {
+        width: 75px;
+        height: 72px;
+        top: -100px;
+        left: 90px;
+      }
+    }
+  }
+
+  .advantages__item--souvenirs {
+    .advantages__title {
+      &::before {
+        width: 64px;
+        height: 75px;
+        top: -103px;
+        left: 95px;
+      }
+    }
+  }
+
+  .advantages__item--food {
+    .advantages__title {
+      &::before {
+        width: 77px;
+        height: 68px;
+        top: -97px;
+        left: 90px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__text {
     margin-left: 57px;
     margin-right: 57px;
+  }
+
+  .advantages__item--lodging {
+    .advantages__title {
+      &::before {
+        left: 161px;
+      }
+    }
+  }
+
+  .advantages__item--souvenirs {
+    .advantages__title {
+      &::before {
+        left: 167px;
+      }
+    }
+  }
+
+  .advantages__item--food {
+    .advantages__title {
+      &::before {
+        left: 162px;
+      }
+    }
   }
 }
