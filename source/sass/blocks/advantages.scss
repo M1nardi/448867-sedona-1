@@ -37,14 +37,14 @@
 
 .advantages__item--lodging {
   .advantages__title {
-      &::before {
+    &::before {
       content: "";
       position: absolute;
       width: 39px;
       height: 37px;
       top: -9px;
       left: -48px;
-      background-image: url(../img/icon-house.svg);
+      background-image: url("../img/icon-house.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -53,14 +53,14 @@
 
 .advantages__item--souvenirs {
   .advantages__title {
-      &::before {
+    &::before {
       content: "";
       position: absolute;
       width: 32px;
       height: 38px;
       top: -10px;
       left: -44px;
-      background-image: url(../img/icon-gift.svg);
+      background-image: url("../img/icon-gift.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -69,14 +69,14 @@
 
 .advantages__item--food {
   .advantages__title {
-      &::before {
+    &::before {
       content: "";
       position: absolute;
       width: 40px;
       height: 35px;
       top: -4px;
       left: -51px;
-      background-image: url(../img/icon-burger.svg);
+      background-image: url("../img/icon-burger.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
