@@ -102,6 +102,9 @@
   }
 
   .advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 33.3333%;
     margin: 0;
     text-align: center;
@@ -130,7 +133,7 @@
         width: 75px;
         height: 72px;
         top: -100px;
-        left: 90px;
+        left: -4px;
       }
     }
   }
@@ -141,7 +144,7 @@
         width: 64px;
         height: 75px;
         top: -103px;
-        left: 95px;
+        left: 18px;
       }
     }
   }
@@ -152,7 +155,7 @@
         width: 77px;
         height: 68px;
         top: -97px;
-        left: 90px;
+        left: -19px;
       }
     }
   }
@@ -167,7 +170,7 @@
   .advantages__item--lodging {
     .advantages__title {
       &::before {
-        left: 161px;
+        left: -5px;
       }
     }
   }
@@ -175,7 +178,7 @@
   .advantages__item--souvenirs {
     .advantages__title {
       &::before {
-        left: 167px;
+        left: 18px;
       }
     }
   }
@@ -183,7 +186,7 @@
   .advantages__item--food {
     .advantages__title {
       &::before {
-        left: 162px;
+        left: -18px;
       }
     }
   }
