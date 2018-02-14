@@ -79,6 +79,10 @@
     padding-top: 14px;
   }
 
+  .photo-gallery__container {
+    margin-top: 8px;
+  }
+
   .photo-gallery__header {
     padding-left: 138px;
     padding-right: 138px;
@@ -124,7 +128,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 20px;
+    padding: 9px 20px;
     padding-right: 29px;
     margin: 0;
     background-color: $bg-grey;

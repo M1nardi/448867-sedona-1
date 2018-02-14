@@ -61,6 +61,7 @@
   border: none;
   padding: 0;
   vertical-align: top;
+  cursor: pointer;
 
   &--replay {
     margin-right: auto;
@@ -68,6 +69,18 @@
 
   &--subtitles {
     margin-right: 31px;
+  }
+
+  &:hover path,
+  &:focus path,
+  &:hover polygon,
+  &:focus polygon {
+    fill: #000000;
+  }
+
+  &:active path,
+  &:active polygon {
+    fill: #c1c1c1;
   }
 }
 
@@ -110,6 +123,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .video-gallery {
+    padding-top: 68px;
+  }
+
   .video-gallery__doubt {
     margin-bottom: 30px;
 
@@ -137,6 +154,11 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  .video-gallery__button path,
+  .video-gallery__button polygon {
+    fill: $bg-white;
+  }
+
   .video-gallery__seek-wrapper {
     position: static;
     padding: 0 42px;
@@ -155,6 +177,7 @@
 
 @media (min-width: $desktop-width) {
   .video-gallery {
+    padding-top: 72px;
     padding-bottom: 86px;
   }
 

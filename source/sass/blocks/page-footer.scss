@@ -30,6 +30,16 @@
   text-transform: uppercase;
 }
 
+.page-footer__copyright-link {
+  &:hover path, &:focus path {
+  fill: $bg-blue;
+  }
+
+  &:active path {
+    fill: $bg-grey-hover;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     padding: 0;
@@ -51,12 +61,26 @@
   }
 
   .page-footer__copyright {
+    align-items: center;
     margin: 0;
+  }
+
+  .page-footer__copyright-text {
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    margin-right: 44px;
+  }
+
+  .page-footer__social {
+    margin-right: auto;
+  }
+
   .page-footer__hashtag {
     padding-left: 72px;
+    margin-right: 257px;
   }
 }
