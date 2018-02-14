@@ -159,10 +159,10 @@ input[type="radio"]:checked ~ .review-form__radio-label::after {
   border-radius: 50%;
   background-color: black;
   cursor: pointer;
+}
 
-  &:active {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+input[type="radio"]:checked ~ .review-form__radio-label:active::after {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .review-form__radio-option {
@@ -400,9 +400,13 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label::before {
 
   .review-form__contacts {
     width: 100%;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+
+    .review-form__input-label {
+      padding-left: 0;
+    }
   }
 
   .review-form__input-label--left {
@@ -517,6 +521,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label::before {
   .review-form__contacts {
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 24px;
   }
 
   .review-form__input-wrapper {
