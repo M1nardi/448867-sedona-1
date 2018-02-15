@@ -61,6 +61,7 @@
   width: 100%;
   padding: 16px 0;
   padding-left: 20px;
+  margin: 0;
   border: none;
   background-color: $bg-grey;
 
@@ -130,10 +131,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: -79px;
-    top: -18px;
-    width: 55px;
-    height: 55px;
+    left: -76px;
+    top: -16px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background-color: $bg-grey;
     cursor: pointer;
@@ -148,19 +149,27 @@
   }
 }
 
-input[type="radio"]:checked ~ .review-form__radio-label::after {
+input[type="radio"]:checked ~ .review-form__radio-label::before {
   content: "";
   position: absolute;
-  left: -63px;
-  top: -2px;
-  width: 23px;
-  height: 23px;
+  left: -76px;
+  top: -16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: black;
+  border: 18px solid $bg-grey;
+  background-color: $bg-black;
   cursor: pointer;
 }
 
-input[type="radio"]:checked ~ .review-form__radio-label:active::after {
+
+input[type="radio"]:checked ~ .review-form__radio-label:hover::before,
+input[type="radio"]:checked ~ .review-form__radio-label:focus::before { 
+  border-color: $bg-grey-hover;
+}
+
+input[type="radio"]:checked ~ .review-form__radio-label:active::before {
+  border-color: $bg-grey-active;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -208,6 +217,10 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label::before {
   background-position: 50% 50%;
 }
 
+input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
+  background-image: url("../img/icon-tick-active.svg");
+}
+
 .review-form__checkbox-option {
   padding-left: 80px;
   margin-bottom: 54px;
@@ -253,6 +266,20 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label::before {
   font-weight: bold;
   color: $bg-white;
   background-color: $bg-blue;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bg-blue-active;
+  }
+
+  &:disabled {
+    background-color: $bg-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -418,18 +445,23 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label::before {
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 55px;
-    padding-left: 117px;
+    padding-left: 97px;
   }
 
   .review-form__checkbox-option {
-    width: 30%;
-    padding-left: 58px;
-    margin-right: 41px;
+    width: 37%;
+    box-sizing: border-box;
+    padding-left: 79px;
+    margin-right: 53px;
     margin-bottom: 62px;
-  }
 
-  .review-form__checkbox-option:nth-child(even) {
-    margin-right: 0;
+    &:nth-child(2) {
+      order: 1
+    }
+
+    &:nth-child(4) {
+      order: 1;
+    }
   }
 
   .review-form__comment {
@@ -532,7 +564,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label::before {
   }
 
   .review-form__checkbox-list {
-    padding-left: 82px;
+    padding: 0;
     margin: 0;
     margin-bottom: 18px;
     margin-top: 57px;
@@ -541,11 +573,11 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label::before {
   }
 
   .review-form__checkbox-option {
-    width: 127px;
+    width: auto;
     padding: 0;
+    padding-left: 78px;
     margin: 0;
   }
-
 
   .review-form__checkbox-option:nth-child(2) {
     order: 1;
