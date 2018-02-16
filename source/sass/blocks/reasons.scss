@@ -33,10 +33,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 41px;
+    padding-top: 39px;
     padding-right: 25px;
     padding-bottom: 38px;
     padding-left: 25px;
+  }
+}
+
+.reasons__item:first-child {
+  .reasons__container {
+    padding-top: 77px;
+    background: url("../img/bg-triangle.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -179,6 +189,13 @@
     }
   }
 
+  .reasons__item:first-child {
+  .reasons__container {
+    padding-top: 0;
+    background: none;
+  }
+}
+
   .reasons__container {
     height: 256px;
 
@@ -256,8 +273,7 @@
     }
 
     .reasons__text {
-      padding-left: 49px;
-      padding-right: 49px;
+      padding: 0 34px;
     }
   }
 }
@@ -312,8 +328,7 @@
     }
 
     .reasons__text {
-      padding-left: 58px;
-      padding-right: 58px;
+      padding: 0 40px;
     }
   }
 }

@@ -9,12 +9,12 @@
     </head>
     <body>
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
-                <button class="main-nav__toggle" type="button">Открыть меню</button>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="photo.html">Фото и видео</a>
@@ -28,25 +28,27 @@
             </ul>
           </div>
         </nav>
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Барбершоп «Бородинский»">
-          </picture>
-        </a>
-        <div class="page-header__container page-header__container--small">
-          <img class="page-header__greeting page-header__greeting--small" src="img/text-sedona.svg" width="230" height="39" alt="Добро пожаловать в Седону!">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Барбершоп «Бородинский»">
+            </picture>
+          </a>
         </div>
       </header>
-      <main class="page-main page-main--narrow">
+      <main class="page-main">
+        <div class="page-main__container page-main__container--small">
+          <img class="page-main__greeting page-main__greeting--small" src="img/text-sedona.svg" width="230" height="39" alt="Добро пожаловать в Седону!">
+        </div>
         <div class="page-main__header page-main__header--wide">
           <h1 class="visually-hidden">Форма отзыва</h1>
           <h2 class="page-main__title">Оставьте свой отзыв</h2>
           <p class="page-main__annotation">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review-form">
-          <fieldset class="review-form__item">
+          <div class="review-form__item">
             <h3 class="review-form__title review-form__title--right">Представьтесь:</h3>
             <div class="review-form__input-container review-form__input-container--small">
               <label class="review-form__input-label" for="first-name">Имя<sup>*</sup>:</label>
@@ -60,8 +62,8 @@
               <label class="review-form__input-label" for="father-name">Отчество:</label>
               <input class="review-form__input" type="text" id="father-name" name="father-name" value="Александрович">
             </div>
-          </fieldset>
-          <fieldset class="review-form__item">
+          </div>
+          <div class="review-form__item">
             <h3 class="review-form__title review-form__title--center">Контактная информация:</h3>
             <div class="review-form__container">
               <div class="review-form__contacts">
@@ -79,8 +81,8 @@
                 </div>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="review-form__item">
+          </div>
+          <div class="review-form__item">
             <h3 class="review-form__title">Ваше общее впечатление:</h3>
             <ul class="review-form__radio-list">
               <li class="review-form__radio-option">
@@ -96,8 +98,8 @@
                 <label class="review-form__radio-label" for="no-decision">Затрудняюсь ответить</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="review-form__item">
+          </div>
+          <div class="review-form__item">
             <h3 class="review-form__title review-form__title--center review-form__title--small">Посещенные достопримечательности:</h3>
             <ul class="review-form__checkbox-list">
               <li class="review-form__checkbox-option">
@@ -117,12 +119,15 @@
                 <label class="review-form__checkbox-label" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="review-form__item">
+          </div>
+          <div class="review-form__item">
             <h3 class="review-form__title review-form__title--center review-form__title--small">Опишите свои эмоции:</h3>
             <textarea class="review-form__comment" name="comment" id="comment-field" rows="6">Опишите подробно все свои восторги</textarea>
-          </fieldset>
-          <button class="review-form__button" type="submit">Отправить отзыв</button>
+          </div>
+          <div class="review-form__button-container">
+            <button class="review-form__button" type="submit">Отправить отзыв</button>
+            <div class="review-form__note"><sup>*</sup> - обязательные поля</div>
+          </div>
         </form>
       </main>
       <footer class="page-footer">
@@ -168,5 +173,33 @@
           </div>
         </div>
       </footer>
+      <div class="pop-up pop-up--fail">
+        <p class="pop-up__warning">Что-то пошло не так!</p>
+        <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="pop-up__button" type="button">Ок</button>
+      </div>
+      <div class="pop-up pop-up--success">
+        <p class="pop-up__warning">Ваш отзыв отправлен!</p>
+        <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="pop-up__container">
+          <button class="pop-up__button" type="button">Закрыть окно</button>
+        </div>
+      </div>
+      <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
     </body>
   </html>

@@ -12,15 +12,9 @@
   display: flex;
   flex-direction: column;
   box-sizing: content-box;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
-  border: none;
-
-  &::before {
-    content: "";
-    height: 1px;
-    background-color: $bg-grey;
-  }
+  border-top: 1px solid $bg-grey;
 }
 
 .review-form__title {
@@ -119,6 +113,7 @@
 
 .review-form__radio-list {
   margin: 0;
+  margin-top: 36px;
   padding: 0;
   list-style: none;
 }
@@ -174,7 +169,7 @@ input[type="radio"]:checked ~ .review-form__radio-label:active::before {
 }
 
 .review-form__radio-option {
-  padding-left: 80px;
+  padding-left: 77px;
   margin-bottom: 43px;
 }
 
@@ -293,12 +288,9 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
 
   .review-form__item {
     box-sizing: border-box;
-    margin-bottom: 36px;
-
-    &::before {
-      content: "";
-      height: 0;
-    }
+    padding: 0;
+    margin-bottom: 35px;
+    border: none;
   }
 
   .review-form__item:nth-child(1) {
@@ -340,7 +332,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
   }
 
   .review-form__title {
-    margin-bottom: 73px;
+    margin-bottom: 38px;
     text-align: left;
 
     @include text-size(21px, 26px);
@@ -429,10 +421,6 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-
-    .review-form__input-label {
-      padding-left: 0;
-    }
   }
 
   .review-form__input-label--left {
@@ -444,7 +432,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 55px;
+    margin-top: 36px;
     padding-left: 97px;
   }
 
@@ -468,7 +456,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
     box-sizing: border-box;
     height: 160px;
     width: 100%;
-    margin-top: 56px;
+    margin-top: 36px;
     border: none;
     padding-left: 19px;
     padding-top: 16px;
@@ -477,6 +465,15 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
     &:focus {
       padding-left: 15px;
     }
+  }
+
+  .review-form__button-container {
+    width: 100%;
+    order: 6;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .review-form__button {
@@ -490,6 +487,11 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
     background-color: $bg-blue;
     font-weight: bold;
     color: $bg-white;
+  }
+
+  .review-form__note {
+    @include text-size(14px, 26px);
+    text-transform: uppercase;
   }
 }
 
