@@ -86,7 +86,7 @@
 }
 
 .reasons__number--white {
-    &::before {
+  &::before {
     background-color: white;
   }
 
@@ -191,11 +191,11 @@
   }
 
   .reasons__item:first-child {
-  .reasons__container {
-    padding-top: 0;
-    background: none;
+    .reasons__container {
+      padding-top: 0;
+      background: none;
+    }
   }
-}
 
   .reasons__container {
     height: 256px;

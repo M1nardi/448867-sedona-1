@@ -4,10 +4,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
   width: 320px;
   height: 250px;
   padding-top: 44px;
+  margin: auto;
   
   @include text-size(18px, 26px);
   text-align: center;

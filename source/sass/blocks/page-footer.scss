@@ -33,7 +33,7 @@
 
 .page-footer__copyright-link {
   &:hover path, &:focus path {
-  fill: $bg-blue;
+    fill: $bg-blue;
   }
 
   &:active path {
