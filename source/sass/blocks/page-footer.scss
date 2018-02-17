@@ -1,6 +1,7 @@
 .page-footer {
   min-width: 320px;
-  padding-top: 34px;
+  padding-top: 36px;
+  padding-bottom: 15px;
   margin: 0 auto;
   text-align: center;
   background-color: $bg-white;
@@ -9,11 +10,18 @@
 .page-footer__hashtag {
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 
   @include text-size (21px, 26px);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  margin: 0 auto;
 }
 
 .page-footer__copyright-text {
@@ -21,6 +29,17 @@
 
   @include text-size (14px, 26px);
   text-transform: uppercase;
+}
+
+.page-footer__copyright-link {
+  &:hover path,
+  &:focus path {
+    fill: $bg-blue;
+  }
+
+  &:active path {
+    fill: $bg-grey-hover;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -32,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 47px;
+    padding-top: 36px;
     padding-bottom: 29px;
     margin-left: 60px;
     margin-right: 60px;
@@ -42,10 +61,28 @@
     padding: 0;
     margin: 0;
   }
+
+  .page-footer__copyright {
+    align-items: center;
+    margin: 0;
+  }
+
+  .page-footer__copyright-text {
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    margin-right: 44px;
+  }
+
+  .page-footer__social {
+    margin-right: auto;
+  }
+
   .page-footer__hashtag {
     padding-left: 72px;
+    margin-right: 257px;
   }
 }

@@ -38,7 +38,7 @@
 
 .photo-gallery__container {
   margin-top: 17px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .photo-gallery__preview {
@@ -46,7 +46,7 @@
 }
 
 .photo-gallery__info {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .photo-gallery__title {
@@ -77,6 +77,10 @@
 @media (min-width: $tablet-width) {
   .photo-gallery {
     padding-top: 14px;
+  }
+
+  .photo-gallery__container {
+    margin-top: 9px;
   }
 
   .photo-gallery__header {
@@ -124,7 +128,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 20px;
+    padding: 8px 20px;
     padding-right: 29px;
     margin: 0;
     background-color: $bg-grey;
