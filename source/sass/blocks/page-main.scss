@@ -20,6 +20,7 @@
   position: relative;
   min-width: auto;
   background: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-color: #97bcd6;
   background-position: center bottom, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
@@ -61,7 +62,7 @@
 
 .page-main__header {
   padding: 0;
-  padding-top: 50px;
+  padding-top: 38px;
   margin: 0;
   margin-left: 25px;
   margin-right: 25px;
@@ -80,7 +81,7 @@
   margin-bottom: 17px;
 
   .page-main__title {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 }
 
@@ -148,6 +149,7 @@
   }
 
   .page-main__header {
+    padding-top: 50px;
     margin-bottom: 49px;
   }
 
@@ -159,7 +161,7 @@
   }
 
   .page-main__annotation {
-    padding: 0 145px;
+    padding: 0 162px;
     margin-bottom: 54px;
   }
 }
