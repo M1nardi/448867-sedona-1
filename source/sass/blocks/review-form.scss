@@ -454,7 +454,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
     margin-bottom: 62px;
 
     &:nth-child(2) {
-      order: 1
+      order: 1;
     }
 
     &:nth-child(4) {
