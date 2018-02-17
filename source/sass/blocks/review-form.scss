@@ -78,8 +78,8 @@
 
 .review-form__icon {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 58px;
   height: 58px;
   background-color: $bg-grey-hover;
@@ -310,7 +310,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
       content: "";
       position: absolute;
       top: 24px;
-      left: 0px;
+      left: 0;
       width: 1px;
       height: 292px;
       background-color: $bg-grey;
@@ -349,18 +349,16 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
       padding-left: 57px;
       margin-bottom: 57px;
     }
-
-    &--center {
-      position: relative;
-      width: 412px;
-      margin: 0 auto;
-      padding: 0;
-      margin-bottom: 20px;
-      text-align: center;
-    }
   }
 
   .review-form__title--center {
+    position: relative;
+    width: 412px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+
     &::before {
       position: absolute;
       content: "";
@@ -503,6 +501,7 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
 
   .review-form__note {
     display: block;
+
     @include text-size(14px, 26px);
     text-transform: uppercase;
   }
@@ -525,15 +524,13 @@ input[type="checkbox"]:checked ~ .review-form__checkbox-label:active::before {
     &--right {
       padding-left: 80px;
     }
-
-    &--center {
-      padding: 0;
-      margin-top: 0;
-      margin-bottom: 65px;
-    }
   }
 
   .review-form__title--center {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 65px;
+
     &::before {
       width: 280px;
       left: -275px;

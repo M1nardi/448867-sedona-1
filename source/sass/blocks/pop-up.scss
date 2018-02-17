@@ -13,7 +13,7 @@
   text-align: center;
   color: black;
   background-color: $bg-white;
-  box-shadow: 0px 1px 15px 5px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 1px 15px 5px rgba(0, 1, 1, 0.2);
   z-index: 10;
 }
 
@@ -87,7 +87,7 @@
     padding-top: 60px;
   }
 
-  .pop-up--success{
+  .pop-up--success {
     width: 648px;
     height: 293px;
   }
