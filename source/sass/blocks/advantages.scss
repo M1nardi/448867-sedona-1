@@ -162,8 +162,9 @@
 
 @media (min-width: $desktop-width) {
   .advantages__text {
-    margin-left: 57px;
-    margin-right: 57px;
+    width: 284px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .advantages__item--lodging {
